@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/hwasungmars/algorithms.svg?branch=master)](https://travis-ci.org/hwasungmars/algorithms)
 # algorithms
 
 A Clojure library designed to ... well, that part is up to you.
