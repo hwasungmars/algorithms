@@ -17,7 +17,6 @@
     (is (= 1 (count-inversion [1 3 2])))
     (is (= 5 (count-inversion [2 3 5 4 1])))))
 
-
 (deftest stress-test
   (testing "Inversion should be able to deal with large inverted arrays."
     (let [large-number 10000
