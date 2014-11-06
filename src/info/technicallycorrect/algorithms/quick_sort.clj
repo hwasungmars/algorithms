@@ -5,6 +5,6 @@
   [array]
   (if (< (count array) 2)
     array
-    (let [pivot (nth array (rand-int (count array)))
+    (let [pivot (rand-nth array)
           {X true Y false} (group-by #(< % pivot) array)]
       (concat (quicksort X) (quicksort Y)))))
