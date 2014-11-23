@@ -33,4 +33,7 @@
     (let [graph {:a [:b :c :d] :b [:c] :c [:a :d]}
           expected [:d :c :b :a]]
       (is (= expected (dfs-pop graph :a)))))
-  )
+  (testing "Coursera example graph"
+    (let [graph {:a [:b] :b [:c :d] :c [:a] :d [:e] :e [:f :g] :f [:d] :g [:h] :h [:i] :i [:g]}
+          expected [:c :f :i :h :g :e :d :b :a]]
+      (is (= expected (dfs-pop graph :a))))))
